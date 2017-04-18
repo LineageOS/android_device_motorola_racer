@@ -14,7 +14,8 @@
 # limitations under the License.
 #
 
--include device/motorola/sm7250-common/BoardConfigCommon.mk
+# Inherit from sm7250-common
+include device/motorola/sm7250-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/motorola/racer
 
@@ -92,3 +93,6 @@ ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/odm/manifest_n.xml
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+# Inherit the proprietary files
+include vendor/motorola/racer/BoardConfigVendor.mk

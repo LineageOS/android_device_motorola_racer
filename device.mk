@@ -14,10 +14,8 @@
 # limitations under the License.
 #
 
+# Inherit from sm7250-common
 $(call inherit-product, device/motorola/sm7250-common/common.mk)
-
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/motorola/racer/racer-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -80,3 +78,6 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/motorola/racer/racer-vendor.mk)
