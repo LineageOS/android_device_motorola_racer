@@ -92,7 +92,7 @@ ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/odm/manifest_dn.xml
 ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/odm/manifest_n.xml
 
 # SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Inherit the proprietary files
 include vendor/motorola/racer/BoardConfigVendor.mk
