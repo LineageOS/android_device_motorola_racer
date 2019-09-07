@@ -35,6 +35,9 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Kernel
 TARGET_KERNEL_RECOVERY_CONFIG := vendor/racer_recovery_defconfig
 TARGET_KERNEL_CONFIG := vendor/racer_defconfig
+TARGET_KERNEL_ADDITIONAL_FLAGS += \
+    DTC=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc \
+    MKDTIMG=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/mkdtimg
 
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES += \
