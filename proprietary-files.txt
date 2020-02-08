@@ -215,13 +215,13 @@ vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so
 vendor/lib64/motorola.hardware.audio.adspd@1.0.so
 
 # MotCamera2
-app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
-etc/permissions/com.motorola.motosignature.xml
-etc/permissions/moto-core_services.xml
-etc/permissions/moto-settings.xml
-framework/com.motorola.motosignature.jar
-framework/moto-core_services.jar
-framework/moto-settings.jar
+system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
+system/etc/permissions/com.motorola.motosignature.xml
+system/etc/permissions/moto-core_services.xml
+system/etc/permissions/moto-settings.xml
+system/framework/com.motorola.motosignature.jar
+system/framework/moto-core_services.jar
+system/framework/moto-settings.jar
 product/app/MotCamera2AI/MotCamera2AI.apk;PRESIGNED
 product/etc/init/init.motcamera2.rc
 product/etc/permissions/com.motorola.androidx.camera.extensions.xml
