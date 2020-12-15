@@ -25,6 +25,9 @@ function blob_fixup() {
     vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so | vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so)
         "${PATCHELF}" --replace-needed libtinyalsa.so libtinyalsa-moto.so "${2}"
         ;;
+    vendor/lib64/libvidhance.so)
+        "${PATCHELF}" --print-needed "${2}" |grep -q libcomparetf2_shim || "${PATCHELF}" --add-needed libcomparetf2_shim.so "${2}"
+	;;
     esac
 }
 
