@@ -24,8 +24,6 @@ namespace_imports = [
 blob_fixups: blob_fixups_user_type = {
     'vendor/bin/charge_only_mode': blob_fixup()
         .add_needed('libmemset_shim.so'),
-    ('vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so', 'vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so'): blob_fixup()
-        .replace_needed('libtinyalsa.so', 'libtinyalsa-moto.so'),
     'vendor/lib64/libvidhance.so': blob_fixup()
         .add_needed('libcomparetf2_shim.so'),
     'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so': blob_fixup()
