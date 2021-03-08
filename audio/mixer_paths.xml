@@ -192,6 +192,7 @@
 	<!-- HFP end -->
 	<!-- echo reference -->
 	<ctl name="AUDIO_REF_EC_UL1 MUX" value="None" />
+	<ctl name="AUDIO_REF_EC_UL10 MUX" value="None" />
 	<ctl name="EC Reference Channels" value="Zero"/>
 	<ctl name="VOC_EXT_EC MUX" value="NONE" />
 	<ctl name="SPK ASP TX1 Source" value="VMON" />
@@ -260,6 +261,17 @@
 	<ctl name="Incall_Music Audio Mixer MultiMedia9" value="0" />
 	<ctl name="Incall_Music_2 Audio Mixer MultiMedia9" value="0" />
 	<!-- Incall Music End -->
+	
+	<!-- compress-voip-call start -->
+	<ctl name="SEN_MI2S_RX_Voice Mixer Voip" value="0" />
+	<ctl name="Voip_Tx Mixer SEN_MI2S_TX_Voip" value="0" />
+	<ctl name="SLIM_7_RX_Voice Mixer Voip" value="0" />
+	<ctl name="Voip_Tx Mixer SLIM_7_TX_Voip" value="0" />
+	<ctl name="AFE_PCM_RX_Voice Mixer Voip" value="0" />
+	<ctl name="Voip_Tx Mixer AFE_PCM_TX_Voip" value="0" />
+	<ctl name="USB_AUDIO_RX_Voice Mixer Voip" value="0" />
+	<ctl name="Voip_Tx Mixer USB_AUDIO_TX_Voip" value="0" />
+	<!-- compress-voip-call end-->
 
 	<!-- Audio BTSCO -->
 	<ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia1" value="0" />
@@ -279,6 +291,14 @@
 	<!-- afe-proxy -->
 	<ctl name="AFE_PCM_RX Audio Mixer MultiMedia2" value="0" />
 	<!-- afe-proxy end-->
+
+	<!-- voip end-->
+	<ctl name="SEN_MI2S_RX Audio Mixer MultiMedia10" value="0" />
+	<ctl name="SEN_MI2S_RX Audio Mixer MultiMedia10" value="0" />
+	<ctl name="MultiMedia10 Mixer SLIM_7_TX" value="0" />
+	<ctl name="MultiMedia10 Mixer SEN_MI2S_TX" value="0" />
+	<ctl name="MultiMedia10 Mixer USB_AUDIO_TX" value="0" />
+	<!-- voip end-->
 
 	<path name="set-capture-format-default">
 		<ctl name="SEN_MI2S_TX Format" value="S16_LE" />
@@ -362,6 +382,42 @@
 	<path name="echo-reference usb-headphones">
 		<ctl name="AUDIO_REF_EC_UL1 MUX" value="USB_AUDIO_RX" />
 		<ctl name="EC Reference Channels" value="Two"/>
+	</path>
+
+	<path name="echo-reference-voip">
+		<ctl name="AUDIO_REF_EC_UL10 MUX" value="SEN_MI2S_RX" />
+		<ctl name="EC Reference Channels" value="One"/>
+	</path>
+	
+	<path name="echo-reference-voip handset">
+		<path name="echo-reference-voip" />
+	</path>
+	
+	<path name="echo-reference-voip headset">
+		<ctl name="AUDIO_REF_EC_UL10 MUX" value="SEN_MI2S_RX" />
+		<ctl name="EC Reference Channels" value="Two"/>
+	</path>
+
+	<path name="echo-reference-voip speaker">
+		<ctl name="AUDIO_REF_EC_UL10 MUX" value="SEC_MI2S_TX" />
+		<ctl name="AUDIO_REF_EC_UL1 MUX" value="SEC_MI2S_TX" />
+		<ctl name="EC Reference Channels" value="One"/>
+	</path>
+
+	<path name="echo-reference-voip usb-handset">
+		<ctl name="AUDIO_REF_EC_UL10 MUX" value="USB_AUDIO_RX" />
+		<ctl name="EC Reference Channels" value="Two"/>
+	</path>
+
+	<path name="echo-reference-voip usb-headphones">
+		<ctl name="AUDIO_REF_EC_UL10 MUX" value="USB_AUDIO_RX" />
+		<ctl name="EC Reference Channels" value="Two"/>
+	</path>
+
+	<path name="echo-reference-voip bt-sco">
+	</path>
+
+	<path name="echo-reference-voip bt-sco-wb">
 	</path>
 
 	<path name="low-latency-playback">
@@ -523,6 +579,54 @@
 	<path name="afe-proxy-record usb-headset-mic">
 	</path>
 
+	<path name="compress-voip-call">
+		<ctl name="SEN_MI2S_RX_Voice Mixer Voip" value="1" />
+		<ctl name="Voip_Tx Mixer SEN_MI2S_TX_Voip" value="1" />
+	</path>
+
+	<path name="compress-voip-call speaker">
+		<ctl name="VOC_EXT_EC MUX" value="SEC_MI2S_TX" />
+		<path name="voicemmode1-call" />
+	</path>
+
+	<path name="compress-voip-call bt-sco">
+		<ctl name="SLIM_7_RX_Voice Mixer Voip" value="1" />
+		<ctl name="Voip_Tx Mixer SLIM_7_TX_Voip" value="1" />
+	</path>
+
+	<path name="compress-voip-call bt-sco-wb">
+		<ctl name="BT SampleRate" value="KHZ_16" />
+		<path name="voicemmode1-call bt-sco" />
+	</path>
+
+	<path name="compress-voip-call afe-proxy">
+		<ctl name="AFE_PCM_RX_Voice Mixer Voip" value="1" />
+		<ctl name="Voip_Tx Mixer AFE_PCM_TX_Voip" value="1" />
+	</path>
+
+	<path name="compress-voip-call hdmi">
+		<ctl name="HDMI_RX_Voice Mixer Voip" value="1" />
+		<ctl name="Voip_Tx Mixer SEN_MI2S_TX_Voip" value="1" />
+	</path>
+
+	<path name="compress-voip-call usb-headphones">
+		<ctl name="USB_AUDIO_RX_Voice Mixer Voip" value="1" />
+		<ctl name="Voip_Tx Mixer SEN_MI2S_TX_Voip" value="1" />
+	</path>
+
+	<path name="compress-voip-call usb-headset">
+		<ctl name="USB_AUDIO_RX_Voice Mixer Voip" value="1" />
+		<ctl name="Voip_Tx Mixer USB_AUDIO_TX_Voip" value="1" />
+	</path>
+
+	<path name="compress-voip-call speaker-and-bt-sco">
+		<path name="voicemmode1-call bt-sco" />
+	</path>
+
+	<path name="compress-voip-call speaker-and-bt-sco-wb">
+		<path name="voicemmode1-call bt-sco-wb" />
+	</path>
+
 	<path name="voicemmode1-call">
 		<ctl name="SEN_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
 		<ctl name="VoiceMMode1_Tx Mixer SEN_MI2S_TX_MMode1" value="1" />
@@ -617,6 +721,42 @@
 
 	<path name="voicemmode2-call speaker-and-bt-sco-wb">
 		<path name="voicemmode2-call bt-sco-wb" />
+	</path>
+
+	<!-- VoIP Rx settings -->
+	<path name="audio-playback-voip">
+		<ctl name="SEN_MI2S_RX Audio Mixer MultiMedia10" value="1" />
+	</path>
+
+	<path name="audio-playback-voip bt-sco">
+		<ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia10" value="1" />
+	</path>
+
+	<path name="audio-playback-voip bt-sco-wb">
+		<ctl name="BT SampleRate" value="KHZ_16" />
+		<path name="audio-playback-voip bt-sco" />
+	</path>
+
+	<path name="audio-playback-voip usb-headphones">
+		<ctl name="USB_AUDIO_RX Audio Mixer MultiMedia10" value="1" />
+	</path>
+
+	<!-- VoIP Tx settings -->
+	<path name="audio-record-voip">
+		<ctl name="MultiMedia10 Mixer SEN_MI2S_TX" value="1" />
+	</path>
+
+	<path name="audio-record-voip usb-headset-mic">
+		<ctl name="MultiMedia10 Mixer USB_AUDIO_TX" value="1" />
+	</path>
+
+	<path name="audio-record-voip bt-sco">
+		<ctl name="MultiMedia10 Mixer SLIM_7_TX" value="1" />
+	</path>
+
+	<path name="audio-record-voip bt-sco-wb">
+		<ctl name="BT SampleRate" value="KHZ_16" />
+		<path name="audio-record-voip bt-sco" />
 	</path>
 
 	<path name="incall-rec-uplink">
