@@ -87,5 +87,13 @@ RECOVERY_KERNEL_MODULES := $(addsuffix .ko,$(BOARD_RECOVERY_RAMDISK_KERNEL_MODUL
 # Security
 VENDOR_SECURITY_PATCH := 2022-08-01
 
+# ODM
+ODM_MANIFEST_SKUS := \
+    dn \
+    n
+
+ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/odm/manifest_dn.xml
+ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/odm/manifest_n.xml
+
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
