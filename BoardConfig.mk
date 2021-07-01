@@ -36,6 +36,7 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 TARGET_KERNEL_RECOVERY_CONFIG := vendor/racer_recovery_defconfig
 TARGET_KERNEL_CONFIG := vendor/racer_defconfig
 TARGET_KERNEL_ADDITIONAL_FLAGS += \
+    DTC_PREBUILT=true \
     DTC=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc \
     DTC_OVERLAY_TEST_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/ufdt_apply_overlay \
     MKDTIMG=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/libufdt/mkdtimg
