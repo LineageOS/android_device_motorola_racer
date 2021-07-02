@@ -23,4 +23,7 @@
     <dimen name="status_bar_height_landscape">24.0dip</dimen>
     <dimen name="status_bar_height_portrait">90.0px</dimen>
 
+    <!-- Height of area above QQS where battery/time go (48dp to reduce scrolling) -->
+    <dimen name="quick_qs_offset_height">48dp</dimen>
+
 </resources>
