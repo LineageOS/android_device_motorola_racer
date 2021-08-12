@@ -46,5 +46,8 @@ TARGET_MODULE_ALIASES += \
     snd-soc-wm-adsp.ko:cirrus_wm_adsp.ko \
     irq-madera.ko:cirrus_irq-madera.ko
 
+# Partitions
+BOARD_DTBOIMG_PARTITION_SIZE := 2097152
+
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
