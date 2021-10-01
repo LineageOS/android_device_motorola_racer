@@ -33,6 +33,7 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
+TARGET_KERNEL_RECOVERY_CONFIG := vendor/racer_recovery_defconfig
 TARGET_KERNEL_CONFIG := vendor/racer_defconfig
 
 # Kernel modules - Audio
