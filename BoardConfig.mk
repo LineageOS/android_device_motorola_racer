@@ -22,7 +22,7 @@ DEVICE_PATH := device/motorola/racer
 TARGET_SCREEN_DENSITY := 420
 
 # FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.racer
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.racer
 TARGET_USES_FOD_ZPOS := true
 
 # FM

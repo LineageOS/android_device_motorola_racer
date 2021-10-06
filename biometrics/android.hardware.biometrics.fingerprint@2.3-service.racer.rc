@@ -1,0 +1,4 @@
+service fps_hal.racer /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.racer
+    class late_start
+    user system
+    group system input uhid
