@@ -1,0 +1,32 @@
+# Copyright (C) 2021 The LineageOS Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+on init
+	insmod /vendor/lib/modules/utags.ko
+	insmod /vendor/lib/modules/mmi_annotate.ko
+	insmod /vendor/lib/modules/mmi_info.ko
+	insmod /vendor/lib/modules/tzlog_dump.ko
+	insmod /vendor/lib/modules/mmi_sys_temp.ko
+	insmod /vendor/lib/modules/qpnp-power-on-mmi.ko
+	insmod /vendor/lib/modules/wl2864c.ko
+	insmod /vendor/lib/modules/qpnp-smbcharger-mmi.ko
+	insmod /vendor/lib/modules/mcDrvModule.ko
+	insmod /vendor/lib/modules/exfat.ko
+	insmod /vendor/lib/modules/aw8624.ko
+	insmod /vendor/lib/modules/sensors_class.ko
+	insmod /vendor/lib/modules/mmi_relay.ko
+	insmod /vendor/lib/modules/sx933x_sar.ko
+	insmod /vendor/lib/modules/touchscreen_mmi.ko
+	insmod /vendor/lib/modules/focaltech_0flash_mmi.ko
+	insmod /vendor/lib/modules/mmi_sigprint.ko
