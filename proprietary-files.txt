@@ -258,6 +258,7 @@ vendor/etc/sensors/config/tcs3708.json
 vendor/etc/sensors/config/tcs3708_tianma_always.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
+vendor/lib64/libadspd.so
 vendor/lib64/sensors.moto.so
 vendor/lib64/sensors.ssc.so
 
