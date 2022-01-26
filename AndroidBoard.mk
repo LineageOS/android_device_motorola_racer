@@ -51,4 +51,19 @@ $(INSTALLED_RECOVERY_KMOD_TARGETS): $(INSTALLED_KERNEL_TARGET)
 	@mkdir -p $(dir $@)
 	cp $(@F:%=$(TARGET_OUT_VENDOR)/lib/modules/%) $(TARGET_RECOVERY_ROOT_OUT)/vendor/lib/modules/
 
-$(recovery_uncompressed_ramdisk): $(INSTALLED_RECOVERY_KMOD_TARGETS)
+RECOVERY_FIRMWARE_TARGETS := \
+    aw8695_haptic.bin \
+    aw8695_rtp.bin \
+    samsung-boe-se77c-20033021-17110105-racer.bin \
+    samsung-boe-se77c-20033021-17110305-racer-pvt.bin \
+    samsung-csot-se77c-20042009-17120108-racer.bin \
+    samsung-csot-se77c-20042009-17120308-racer-pvt.bin \
+    synaptics-tianma-s3908-20052606-313204-racer.tdat
+
+INSTALLED_RECOVERY_FIRMWARE_TARGETS := $(RECOVERY_FIRMWARE_TARGETS:%=$(TARGET_RECOVERY_ROOT_OUT)/vendor/firmware/%)
+$(INSTALLED_RECOVERY_FIRMWARE_TARGETS): $(INSTALLED_KERNEL_TARGET)
+	echo -e ${CL_GRN}"Copying firmware to recovery"${CL_RST}
+	@mkdir -p $(dir $@)
+	cp $(@F:%=$(TARGET_OUT_VENDOR)/firmware/%) $(TARGET_RECOVERY_ROOT_OUT)/vendor/firmware/
+
+$(recovery_uncompressed_ramdisk): $(INSTALLED_RECOVERY_KMOD_TARGETS) $(INSTALLED_RECOVERY_FIRMWARE_TARGETS)
