@@ -33,7 +33,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 PRODUCT_PACKAGES += \
     AvoidAppsInCutoutOverlay \
     LatinIMEResRacer \
-    NoCutoutOverlay
+    NoCutoutOverlay \
+    SettingsResRacer
 
 # Audio
 PRODUCT_COPY_FILES += \
