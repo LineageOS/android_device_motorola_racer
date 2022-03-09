@@ -41,7 +41,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Build info
 BUILD_FINGERPRINT := "motorola/racer_retail/racer:11/RPDS31.Q4U-39-26-14-3/ee443b:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=racer_retail \
+    TARGET_PRODUCT=racer_retail \
     PRIVATE_BUILD_DESC="racer_retail-user 11 RPDS31.Q4U-39-26-14-3 ee443b release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
