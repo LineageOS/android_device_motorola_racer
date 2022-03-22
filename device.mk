@@ -61,6 +61,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Sensors
+PRODUCT_PACKAGES += \
+    sensors.moto_ext
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/tcs3708.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/tcs3708.json \
     $(LOCAL_PATH)/configs/sensors/tcs3708_boe_always.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/tcs3708_boe_always.json \

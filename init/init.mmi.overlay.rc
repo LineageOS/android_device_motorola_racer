@@ -20,6 +20,9 @@ on fs
    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules st21nfc.ko goodix_v1430_mmi.ko goodix_v1430_update_mmi.ko goodix_v1430_ts_tools_mmi.ko goodix_fod_mmi.ko sec_mmi.ko synaptics_i2c.ko synaptics_core_module.ko synaptics_device.ko synaptics_diagnostics.ko synaptics_recovery.ko synaptics_reflash.ko synaptics_testing.ko
    setprop vendor.mmi_init.modules_loaded 1
 
+   chown system system /sys/class/touchscreen/primary/double_tap_enabled
+   chown system system /sys/class/touchscreen/primary/double_tap_pressed
+
 on post-fs
    # Change ownership and permision of st nfc device
    wait_for_prop vendor.mmi_init.modules_loaded 1
