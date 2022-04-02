@@ -13,6 +13,10 @@ function blob_fixup() {
         hexdump -ve '1/1 "%.2X"' "${2}" | sed "s/8A0A0094/1F2003D5/g" | xxd -r -p > "${TMPDIR}/${1##*/}"
         mv "${TMPDIR}/${1##*/}" "${2}"
         ;;
+    # memset shim
+    vendor/bin/charge_only_mode)
+        "${PATCHELF}" --add-needed libmemset_shim.so "${2}"
+        ;;
     esac
 }
 
