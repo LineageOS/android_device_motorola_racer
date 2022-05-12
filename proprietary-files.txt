@@ -1,4 +1,5 @@
-# All unpinned blobs below are extracted from Racer RPDS31.Q4U-39-26-14-3
+### All blobs from this list, unless pinned and noted as otherwise,
+##  are from racer_retus RPDS31.Q4U-39-26-14-10
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
