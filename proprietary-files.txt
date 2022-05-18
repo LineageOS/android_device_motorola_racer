@@ -202,6 +202,15 @@ vendor/firmware/goodix-GTx8-18-01-racer.bin
 -product/priv-app/HotwordEnrollmentOKGoogleWM8280/HotwordEnrollmentOKGoogleWM8280.apk
 -product/priv-app/HotwordEnrollmentXGoogleWM8280/HotwordEnrollmentXGoogleWM8280.apk
 
+# IPA Firmware
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
+
 # Listen
 vendor/lib/hw/sound_trigger.primary.default.so
 
