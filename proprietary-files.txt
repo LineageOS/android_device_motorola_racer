@@ -203,6 +203,15 @@ vendor/firmware/goodix-GTx8-18-01-racer.bin
 -product/priv-app/HotwordEnrollmentOKGoogleWM8280/HotwordEnrollmentOKGoogleWM8280.apk
 -product/priv-app/HotwordEnrollmentXGoogleWM8280/HotwordEnrollmentXGoogleWM8280.apk
 
+# IPA Firmware - from Racer RPDS31.Q4U-39-26-14-3
+vendor/firmware/old_ipa/ipa_fws.b00|50270dbcc87b6d58b24e24d62301d6c8069ad75d
+vendor/firmware/old_ipa/ipa_fws.b01|ef7dde8d3eee4eed93d9a6fb42605f4b89b633f4
+vendor/firmware/old_ipa/ipa_fws.b02|0377191f853d978b711e9db1e58562aa58646642
+vendor/firmware/old_ipa/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
+vendor/firmware/old_ipa/ipa_fws.b04|e20c91f1c7e833886d443bbf0cb33223e303583b
+vendor/firmware/old_ipa/ipa_fws.elf|c327e1de27a451129a1bb251a434097c37b0490b
+vendor/firmware/old_ipa/ipa_fws.mdt|55493fa5e1e9180d9400b70320b8854be9b5d363
+
 # IPA Firmware
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
