@@ -2,10 +2,6 @@
 # Properties for racer
 #
 
-# Bootloader check
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.new_bootloader=220216
-
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.physical.num=4
