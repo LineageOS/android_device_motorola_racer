@@ -31,7 +31,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 PRODUCT_PACKAGES += \
-	NoCutoutOverlay
+    LatinIMEResRacer \
+    NoCutoutOverlay
 
 # Audio
 PRODUCT_COPY_FILES += \
