@@ -35,7 +35,8 @@ RECOVERY_KMOD_TARGETS := \
     goodix_v1430_mmi.ko \
     goodix_v1430_update_mmi.ko \
     goodix_v1430_ts_tools_mmi.ko \
-    goodix_fod_mmi.ko sec_mmi.ko \
+    goodix_fod_mmi.ko \
+    sec_mmi.ko \
     synaptics_i2c.ko \
     synaptics_core_module.ko \
     synaptics_device.ko \
