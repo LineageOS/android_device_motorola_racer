@@ -16,6 +16,24 @@
       "message": "Have you tried AOSP fingerprint HIDL service by loading fingerprint.goodix.so instead of using the prebuilt service?",
       "revId": "a704c33e3ecfc31c067e6f2782dcc8adb2f5c319",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b543e457_824a9924",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 23878
+      },
+      "writtenOn": "2022-07-07T17:54:37Z",
+      "side": 1,
+      "message": "yes, while it worked this required less changes.",
+      "parentUuid": "77e58197_8f3cc333",
+      "revId": "a704c33e3ecfc31c067e6f2782dcc8adb2f5c319",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
