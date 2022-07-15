@@ -1135,11 +1135,19 @@
 		<path name="voice-speaker-dmic-ef" />
 	</path>
 
+	<path name="speaker-stereo-dmic-ef">
+		<path name="speaker-dmic-endfire" />
+	</path>
+
 	<path name="voice-rec-dmic-ef">
 		<path name="dmic-endfire" />
 	</path>
 
 	<path name="voice-rec-dmic-ef-fluence">
+		<path name="dmic-endfire" />
+	</path>
+
+	<path name="handset-stereo-dmic-ef">
 		<path name="dmic-endfire" />
 	</path>
 
