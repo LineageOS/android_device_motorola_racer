@@ -1,6 +1,6 @@
 # HAL Services
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-goodixservice                   u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1\.0-service\.racer          u:object_r:hal_lineage_fod_racer_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.racer                  u:object_r:hal_fingerprint_racer_exec:s0
 
 # Fingerprint
 /dev/goodix_fp                  u:object_r:fingerprint_device:s0
