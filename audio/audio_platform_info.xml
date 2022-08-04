@@ -77,6 +77,7 @@
 	<usecase name="USECASE_ADSPD_DSP2_TEXT" type="in" id="40" />
 	<usecase name="USECASE_ADSPD_DSP3_TEXT" type="in" id="41" />
 	<usecase name="USECASE_INCALL_MUSIC_UPLINK" type="out" id="23" />
+	<usecase name="USECASE_AUDIO_RECORD_COMPRESS2" type="in" id="37" />
 	<usecase name="USECASE_AUDIO_A2DP_ABR_FEEDBACK" type="in" id="35" />
 	<usecase name="USECASE_AUDIO_A2DP_ABR_FEEDBACK" type="out" id="35" />
 	<usecase name="USECASE_AUDIO_ECHO_REF" type="in" id="-1" />
