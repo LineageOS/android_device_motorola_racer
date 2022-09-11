@@ -323,12 +323,6 @@ vendor/etc/sensors/config/sns_rotv.json
 vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
-vendor/etc/sensors/config/tcs3708_boe_always.json
-vendor/etc/sensors/config/tcs3708_boeB4_always.json
-vendor/etc/sensors/config/tcs3708_csot_always.json
-vendor/etc/sensors/config/tcs3708_csotB5_always.json
-vendor/etc/sensors/config/tcs3708.json
-vendor/etc/sensors/config/tcs3708_tianma_always.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 vendor/lib64/libadspd.so
