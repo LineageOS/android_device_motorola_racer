@@ -197,6 +197,8 @@ vendor/firmware/goodix-gtx8-01-14-racerl.bin
 vendor/firmware/goodix-GTx8-18-01-racer.bin
 
 # HotwordEnrollment
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
 -product/priv-app/HotwordEnrollmentOKGoogleWM8280/HotwordEnrollmentOKGoogleWM8280.apk
 -product/priv-app/HotwordEnrollmentXGoogleWM8280/HotwordEnrollmentXGoogleWM8280.apk
 
