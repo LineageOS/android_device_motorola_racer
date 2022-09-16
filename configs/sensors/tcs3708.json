@@ -128,30 +128,30 @@
       ".def_config":{
         "owner": "sns_tcs3708",
         "ptime":{ "type": "flt", "ver": "0",
-          "data": "100.0"
+          "data": "120.0"
         },
         "ppulse_len":{ "type": "flt", "ver": "0",
-          "data": "8.0"
+          "data": "32.0"
         },
         "ppulse_len16x":{ "type": "flt", "ver": "0",
-          "data": "1"
+          "data": "0"
         },
         "ppulse":{ "type": "flt", "ver": "0",
           "data": "1.0"
         },
         "pgain":{ "type": "flt", "ver": "0",
-          "data": "2.0"
+          "data": "2000.0"
         },
         "pldrive":{ "type": "flt", "ver": "0",
           "data": "100.0"
         },
         "ppers":{ "type": "flt", "ver": "0",
-          "data": "0.0"
+          "data": "1.0"
         },
         "pBinSearch":{ "type": "flt", "ver": "0",
           "data": "31.0"
         },
-        "panel_birghtness_scale":{ "type": "flt", "ver": "0",
+        "panel_brightness_scale":{ "type": "flt", "ver": "0",
           "data": "1.0"
         },
         "panel":{ "type": "flt", "ver": "0",

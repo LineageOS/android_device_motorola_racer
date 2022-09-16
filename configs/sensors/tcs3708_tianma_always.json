@@ -3,7 +3,7 @@
   {
     "hw_platform": ["MTP", "Surf"],
     "soc_id": ["400", "440"],
-    "panel": ["tianma_syna_667_1080p_dsc_cmd_v1"]
+    "panel": ["tianma_syna_667_1080p_dsc_cmd","tianma_syna_667_1080p_dsc_cmd_v1","tianma_syna_667_1080p_dsc_cmd_v2"]
   },
   "tcs3708_platform":{
     "owner": "sns_tcs3708",
@@ -27,30 +27,30 @@
       ".def_config":{
         "owner": "sns_tcs3708",
         "ptime":{ "type": "flt", "ver": "10101010",
-          "data": "100.0"
+          "data": "120.0"
         },
         "ppulse_len":{ "type": "flt", "ver": "10101010",
-          "data": "8.0"
+          "data": "4.0"
         },
         "ppulse_len16x":{ "type": "flt", "ver": "10101010",
           "data": "1"
         },
         "ppulse":{ "type": "flt", "ver": "10101010",
-          "data": "4.0"
+          "data": "1.0"
         },
         "pgain":{ "type": "flt", "ver": "10101010",
-          "data": "2.0"
+          "data": "2000.0"
         },
         "pldrive":{ "type": "flt", "ver": "10101010",
-          "data": "100.0"
+          "data": "200.0"
         },
         "ppers":{ "type": "flt", "ver": "10101010",
-          "data": "0.0"
+          "data": "1.0"
         },
         "pBinSearch":{ "type": "flt", "ver": "10101010",
           "data": "31.0"
         },
-        "panel_birghtness_scale":{ "type": "flt", "ver": "10101010",
+        "panel_brightness_scale":{ "type": "flt", "ver": "10101010",
           "data": "8.023"
         },
         "panel":{ "type": "flt", "ver": "10101010",
