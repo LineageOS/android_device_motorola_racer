@@ -10,8 +10,8 @@ function blob_fixup() {
     case "${1}" in
     # Patch configureRpcThreadpool
     vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
-        hexdump -ve '1/1 "%.2X"' "${2}" | sed "s/8A0A0094/1F2003D5/g" | xxd -r -p > "${TMPDIR}/${1##*/}"
-        mv "${TMPDIR}/${1##*/}" "${2}"
+        hexdump -ve '1/1 "%.2X"' "${2}" | sed "s/8A0A0094/1F2003D5/g" | xxd -r -p > "${EXTRACT_TMP_DIR}/${1##*/}"
+        mv "${EXTRACT_TMP_DIR}/${1##*/}" "${2}"
         ;;
     # memset shim
     vendor/bin/charge_only_mode)
