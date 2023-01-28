@@ -54,7 +54,8 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.racer
+    android.hardware.biometrics.fingerprint@2.3-service.racer \
+    com.motorola.hardware.biometric.fingerprint@1.0.vendor
 
 # FM
 PRODUCT_PACKAGES += \

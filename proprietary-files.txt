@@ -187,7 +187,6 @@ vendor/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_667.xml
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.goodix.so
-vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1_vendor.so
 
