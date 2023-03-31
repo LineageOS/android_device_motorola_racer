@@ -293,6 +293,15 @@ vendor/firmware/samsung-csot-se77c-20042009-17120108-racer.bin
 vendor/firmware/samsung-csot-se77c-20042009-17120308-racer-pvt.bin
 vendor/firmware/synaptics-tianma-s3908-20052606-313204-racer.tdat
 
+# Recovery firmware
+vendor/firmware/aw8695_haptic.bin:recovery/root/vendor/firmware/aw8695_haptic.bin
+vendor/firmware/aw8695_rtp.bin:recovery/root/vendor/firmware/aw8695_rtp.bin
+vendor/firmware/samsung-boe-se77c-20033021-17110105-racer.bin:recovery/root/vendor/firmware/samsung-boe-se77c-20033021-17110105-racer.bin
+vendor/firmware/samsung-boe-se77c-20033021-17110305-racer-pvt.bin:recovery/root/vendor/firmware/samsung-boe-se77c-20033021-17110305-racer-pvt.bin
+vendor/firmware/samsung-csot-se77c-20042009-17120108-racer.bin:recovery/root/vendor/firmware/samsung-csot-se77c-20042009-17120108-racer.bin
+vendor/firmware/samsung-csot-se77c-20042009-17120308-racer-pvt.bin:recovery/root/vendor/firmware/samsung-csot-se77c-20042009-17120308-racer-pvt.bin
+vendor/firmware/synaptics-tianma-s3908-20052606-313204-racer.tdat:recovery/root/vendor/firmware/synaptics-tianma-s3908-20052606-313204-racer.tdat
+
 # Vibrator firmware
 vendor/firmware/aw8695_haptic.bin
 vendor/firmware/aw8695_rtp_Argo_Navis.bin
