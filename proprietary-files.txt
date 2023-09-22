@@ -39,17 +39,15 @@ vendor/etc/camera/dual_golden_tele.bin
 vendor/etc/camera/dual_golden_wide.bin
 vendor/etc/camera/vidhance_calibration
 vendor/lib/libcamera_nn_stub.so
-vendor/lib/libcamerapostproc.so
 vendor/lib/libcamxexternalformatutils.so
 vendor/lib/libcamxfacialfeatures.so
 vendor/lib/libcamxfdalgo.so
-vendor/lib/libcamxfdengine.so
-vendor/lib/libcamxifestriping.so
 vendor/lib/libcamximageformatutils.so
 vendor/lib/libcamxncs.so
 vendor/lib/libcamxstatscore.so
 vendor/lib/libcamxswprocessalgo.so
 vendor/lib/libcamxtintlessalgo.so
+vendor/lib/libofflinelog.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/camera/components/com.arcsoft.node.dc_capture.so
@@ -152,14 +150,12 @@ vendor/lib64/libmot_flash_aw3643.so
 vendor/lib64/libmot_lux_standardization.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libofflinelog.so
-vendor/lib64/libsnsapi.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsns_registry_skel.so
 vendor/lib64/libswregistrationalgo.so
-vendor/lib64/libswvdec.so
 vendor/lib64/libthirdparty_zoomtranslator_imp.so
 vendor/lib64/libtriplecam_image_optical_zoom.so
 vendor/lib64/libtriplecam_optical_zoom_control.so
@@ -183,7 +179,6 @@ vendor/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_667.xml
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.goodix.so
-vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1_vendor.so
 
@@ -208,16 +203,16 @@ vendor/lib/hw/sound_trigger.primary.default.so
 # Moto ADSP Hal - (Sound Trigger Dependencies)
 vendor/bin/hw/motorola.hardware.audio.adspd@1.0-service
 vendor/etc/init/motorola.hardware.audio.adspd@1.0-service.rc
+vendor/lib/vndk/libtinyalsa.so:vendor/lib/libtinyalsa-moto.so
 vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so
 vendor/lib/motorola.hardware.audio.adspd@1.0_vendor.so
 vendor/lib/motorola.hardware.audio.adspd@1.0.so
-vendor/lib64/vndk/libtinyalsa.so
+vendor/lib64/vndk/libtinyalsa.so:vendor/lib64/libtinyalsa-moto.so
 vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so
 vendor/lib64/motorola.hardware.audio.adspd@1.0.so
 
 # MotCamera2
 -app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
-etc/init/cameraserver.rc
 etc/permissions/com.motorola.motosignature.xml
 etc/permissions/moto-core_services.xml
 etc/permissions/moto-settings.xml
