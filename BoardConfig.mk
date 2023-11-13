@@ -53,6 +53,38 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Copy to recovery
+BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := \
+    utags \
+    mmi_annotate \
+    mmi_info \
+    tzlog_dump \
+    mmi_sys_temp \
+    qpnp-power-on-mmi \
+    qpnp-smbcharger-mmi \
+    slg5bm43670 \
+    aw8695 \
+    exfat \
+    sensors_class \
+    sx933x_sar \
+    mmi_relay \
+    touchscreen_mmi \
+    goodix_v1430_mmi \
+    goodix_v1430_update_mmi \
+    goodix_v1430_ts_tools_mmi \
+    goodix_fod_mmi \
+    sec_mmi \
+    synaptics_i2c \
+    synaptics_core_module \
+    synaptics_device \
+    synaptics_diagnostics \
+    synaptics_recovery \
+    synaptics_reflash \
+    synaptics_testing \
+    mmi_sigprint
+
+RECOVERY_KERNEL_MODULES := $(addsuffix .ko,$(subst _,-,$(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD)))
+
 # Security
 VENDOR_SECURITY_PATCH := 2022-08-01
 
