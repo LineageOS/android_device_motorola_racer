@@ -28,7 +28,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_racer
 PRODUCT_DEVICE := racer
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Motorola Edge
+PRODUCT_MODEL := motorola edge
 PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_AAPT_CONFIG := xxxhdpi
