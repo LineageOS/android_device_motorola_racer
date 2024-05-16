@@ -80,8 +80,7 @@ BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := \
     synaptics_diagnostics \
     synaptics_recovery \
     synaptics_reflash \
-    synaptics_testing \
-    mmi_sigprint
+    synaptics_testing
 
 RECOVERY_KERNEL_MODULES := $(addsuffix .ko,$(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD))
 
