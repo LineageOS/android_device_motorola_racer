@@ -214,7 +214,7 @@ vendor/etc/init/motorola.hardware.audio.adspd@1.0-service.rc
 vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so
 vendor/lib/motorola.hardware.audio.adspd@1.0_vendor.so
 vendor/lib/motorola.hardware.audio.adspd@1.0.so
-vendor/lib64/vndk/libtinyalsa.so
+vendor/lib/vndk/libtinyalsa.so:vendor/lib/libtinyalsa.so
 vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so
 vendor/lib64/motorola.hardware.audio.adspd@1.0.so
 
