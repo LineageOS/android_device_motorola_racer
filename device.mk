@@ -69,7 +69,8 @@ PRODUCT_BOOT_JARS += qcom.fmradio
 # Init
 PRODUCT_PACKAGES += \
     init.mmi.laser.sh \
-    init.mmi.overlay.rc
+    init.mmi.overlay.rc \
+    init.qti.chg_policy.sh 
 
 # Media
 PRODUCT_COPY_FILES += \
