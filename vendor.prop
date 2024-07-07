@@ -36,7 +36,6 @@ ro.surface_flinger.refresh_rate_switching=true
 ro.vendor.display.hdr.config=/vendor/etc/hdr_tm_config.xml
 
 # Media
-media.aac_51_output_enabled=true
 media.stagefright.enable-player=true
 media.stagefright.enable-http=true
 media.stagefright.enable-aac=true
@@ -44,10 +43,7 @@ media.stagefright.enable-qcp=true
 media.stagefright.enable-fma2dp=true
 media.stagefright.enable-scan=true
 media.recorder.show_manufacturer_and_model=true
-mmp.enable.3g2=true
-persist.mm.enable.prefetch=true
 vendor.mm.en.sec.smoothstreaming=false
-vendor.mm.enable.qcom_parser=16777215
 
 # Sensors
 ro.vendor.sensors.mot_ltv=true
