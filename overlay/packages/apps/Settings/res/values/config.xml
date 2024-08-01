@@ -23,4 +23,6 @@
     -->
     <integer name="config_fingerprintSensorLocation">1</integer>
 
+    <!-- The radius of the enrollment progress bar, in dp -->
+    <integer name="config_udfpsEnrollProgressBar">65</integer>
 </resources>
