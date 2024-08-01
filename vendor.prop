@@ -18,6 +18,9 @@ persist.vendor.camera.privapp.list=com.motorola.camera3
 ro.soc.manufacturer=QTI
 ro.soc.model=SM7250
 
+# Fingerprint
+ro.hardware.fingerprint=goodix
+
 # Firmware
 ro.vendor.hw.modem_version=.
 
@@ -26,6 +29,12 @@ ro.vendor.fm.use_audio_session=true
 
 # Graphics
 persist.sys.sf.color_mode=0
+persist.sys.sf.enable_refresh_rate_rectification=0
+persist.sys.sf.set_rectify_timer_ms=1000
+persist.sys.sf.fps_threshold_duration_ms=290
+persist.sys.sf.fps_threshold_count=29
+persist.sys.sf.brightness_threshold_refresh_rate=6
+persist.sys.sf.forbidden_RRR_under_lowbrightness=1
 ro.surface_flinger.set_idle_timer_ms=4000
 ro.surface_flinger.set_touch_timer_ms=4000
 ro.surface_flinger.set_display_power_timer_ms=1000
@@ -34,6 +43,10 @@ ro.surface_flinger.refresh_rate_switching=true
 
 # HDR
 ro.vendor.display.hdr.config=/vendor/etc/hdr_tm_config.xml
+
+# Keyboard
+ro.com.google.ime.kb_pad_port_l=10
+ro.com.google.ime.kb_pad_port_r=10
 
 # Media
 media.stagefright.enable-player=true
