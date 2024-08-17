@@ -54,17 +54,12 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.racer \
-    com.motorola.hardware.biometric.fingerprint@1.0.vendor
+    android.hardware.biometrics.fingerprint@2.3-service.racer
 
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
-    libqcomfm_jni \
-    init.qti.fm.sh \
     qcom.fmradio
-
-PRODUCT_BOOT_JARS += qcom.fmradio
 
 # Init
 PRODUCT_PACKAGES += \
