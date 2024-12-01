@@ -1,0 +1,23 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_etc {
+    name: "init.mmi.overlay.rc",
+    src: "init.mmi.overlay.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mmi.laser.sh",
+    src: "init.mmi.laser.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.chg_policy.sh",
+    src: "init.qti.chg_policy.sh",
+    vendor: true,
+}
