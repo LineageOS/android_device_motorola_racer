@@ -60,5 +60,6 @@ vendor.mm.en.sec.smoothstreaming=false
 
 # Sensors
 ro.vendor.sensors.mot_ltv=true
+persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.hal_trigger_ssr=true
 persist.vendor.sensors.odl.adsp=true
