@@ -19,9 +19,6 @@ $(call inherit-product, device/motorola/sm7250-common/common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/racer/racer-vendor.mk)
 
-# Properties
--include $(LOCAL_PATH)/properties.mk
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
