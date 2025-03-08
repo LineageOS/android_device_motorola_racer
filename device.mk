@@ -32,6 +32,9 @@ PRODUCT_PACKAGES += \
     SettingsResRacer
 
 # Audio
+PRODUCT_PACKAGES += \
+    audio.primary.lito \
+    libqcompostprocbundle
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
@@ -60,6 +63,10 @@ PRODUCT_PACKAGES += \
     init.mmi.laser.sh \
     init.mmi.overlay.rc \
     init.qti.chg_policy.sh 
+
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service.st
 
 # Power
 PRODUCT_COPY_FILES += \
