@@ -26,8 +26,6 @@ vendor/firmware/marley-dsp2-aov-vrgain.bin
 vendor/firmware/marley-dsp3-aov-control.wmfw
 
 # Camera
-vendor/lib/libcamera_nn_stub.so
-vendor/lib/libofflinelog.so
 vendor/lib64/camera/com.mot.eeprom.mot_dw9763_ov8856_eeprom.so
 vendor/lib64/camera/com.mot.eeprom.mot_dw9767_ov16a10_eeprom.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt9767_s5kgw1_eeprom.so
@@ -100,14 +98,6 @@ vendor/lib64/sensors.tof.vl53l1.so
 vendor/lib64/libarcsoft_portrait_distortion_correction.so
 
 # Camera camerax
-vendor/lib/libcamxexternalformatutils.so
-vendor/lib/libcamxfacialfeatures.so
-vendor/lib/libcamxfdalgo.so
-vendor/lib/libcamximageformatutils.so
-vendor/lib/libcamxncs.so
-vendor/lib/libcamxstatscore.so
-vendor/lib/libcamxswprocessalgo.so
-vendor/lib/libcamxtintlessalgo.so
 vendor/lib64/libcamxexternalformatutils.so
 vendor/lib64/libcamxfacialfeatures.so
 vendor/lib64/libcamxfdalgo.so
