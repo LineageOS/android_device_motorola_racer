@@ -28,7 +28,7 @@ TARGET_MODULE_ALIASES += \
     irq-madera.ko:cirrus_irq-madera.ko
 
 # Copy to recovery
-BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := \
+BOARD_RECOVERY_KERNEL_MODULES_LOAD := \
     utags \
     mmi_annotate \
     mmi_info \
@@ -55,7 +55,7 @@ BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := \
     synaptics_reflash \
     synaptics_testing
 
-RECOVERY_KERNEL_MODULES := $(addsuffix .ko,$(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD))
+RECOVERY_KERNEL_MODULES := $(addsuffix .ko,$(BOARD_RECOVERY_KERNEL_MODULES_LOAD))
 
 # ODM
 ODM_MANIFEST_SKUS := \
