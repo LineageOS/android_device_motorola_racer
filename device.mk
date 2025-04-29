@@ -40,6 +40,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.racer
 
+$(call soong_config_set,surfaceflinger,udfps_lib,//$(LOCAL_PATH):libudfps_extension.racer)
+
 # FM
 PRODUCT_PACKAGES += \
     FM2
