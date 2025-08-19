@@ -395,46 +395,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "CPUDDRLatLittleMinFreq",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu0-llcc-ddr-lat/min_freq",
-      "Values": [
-        "7980",
-        "3879",
-        "762"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUDDRLatBigMinFreq",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu6-llcc-ddr-lat/min_freq",
-      "Values": [
-        "7980",
-        "3879",
-        "762"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUDDRLatfloorLittleMinFreq",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu0-cpu-ddr-latfloor/min_freq",
-      "Values": [
-        "7980",
-        "3879",
-        "762"
-      ],
-      "ResetOnInit": true
-    },
-    {
-      "Name": "CPUDDRLatfloorBigMinFreq",
-      "Path": "/sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/min_freq",
-      "Values": [
-        "7980",
-        "3879",
-        "762"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "DoubleTapToWakeEnable",
       "Path": "/sys/class/sensors/dt-gesture/enable",
       "Values": [
@@ -583,30 +543,6 @@
       "Value": "0"
     },
     {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUDDRLatLittleMinFreq",
-      "Duration": 0,
-      "Value": "7980"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUDDRLatBigMinFreq",
-      "Duration": 0,
-      "Value": "7980"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUDDRLatfloorLittleMinFreq",
-      "Duration": 0,
-      "Value": "7980"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "CPUDDRLatfloorBigMinFreq",
-      "Duration": 0,
-      "Value": "7980"
-    },
-    {
       "PowerHint": "INTERACTIVE",
       "Node": "CPULittleClusterUpRateLimit",
       "Duration": 0,
@@ -695,30 +631,6 @@
       "Node": "CPUBWMinFreq",
       "Duration": 3000,
       "Value": "16265"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUDDRLatLittleMinFreq",
-      "Duration": 3000,
-      "Value": "7980"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUDDRLatBigMinFreq",
-      "Duration": 3000,
-      "Value": "7980"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUDDRLatfloorLittleMinFreq",
-      "Duration": 3000,
-      "Value": "7980"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "CPUDDRLatfloorBigMinFreq",
-      "Duration": 3000,
-      "Value": "7980"
     },
     {
       "PowerHint": "LAUNCH",
