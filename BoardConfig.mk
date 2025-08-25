@@ -17,9 +17,6 @@ TARGET_USES_FOD_ZPOS := true
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# Kernel
-TARGET_KERNEL_CONFIG := vendor/racer_defconfig vendor/debugfs.config
-
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES += \
     snd-soc-aov-trigger.ko:aov_trigger.ko \
