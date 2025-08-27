@@ -159,15 +159,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "TASchedtuneHighCap",
-      "Path": "/dev/stune/top-app/schedtune.prefer_high_cap",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "CPUBWHystTriggerCount",
       "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/hyst_trigger_count",
       "Values": [
@@ -337,12 +328,6 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "TASchedtuneHighCap",
-      "Duration": 0,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "INTERACTION",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 0,
       "Value": "0"
@@ -376,12 +361,6 @@
       "Node": "UfsClkGateEnable",
       "Duration": 200,
       "Value": "0"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "TASchedtuneHighCap",
-      "Duration": 3000,
-      "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
