@@ -1,0 +1,9 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+hidl_package_root {
+    name: "vendor.goodix.hardware",
+    path: "device/motorola/racer/biometrics/interfaces/goodix",
+}
