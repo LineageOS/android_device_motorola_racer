@@ -200,6 +200,9 @@ product/priv-app/HotwordEnrollmentXGoogleWM8280/HotwordEnrollmentXGoogleWM8280.a
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
+# Media configs
+vendor/etc/media_profiles_vendor.xml:vendor/etc/media_profiles_V1_0.xml
+
 # MotCamera2
 product/app/MotCamera2AI/MotCamera2AI.apk;PRESIGNED
 product/etc/init/init.motcamera2.rc
