@@ -68,7 +68,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/tcs3708_csotB5_always.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/tcs3708_csotB5_always.json \
     $(LOCAL_PATH)/configs/sensors/tcs3708_tianma_always.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/tcs3708_tianma_always.json
 
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

@@ -31,13 +31,6 @@ TARGET_MODULE_ALIASES += \
     snd-soc-wm-adsp.ko:cirrus_wm_adsp.ko \
     irq-madera.ko:cirrus_irq-madera.ko
 
-# Partitions
-BOARD_DTBOIMG_PARTITION_SIZE := 2097152
-
-# Properties
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
 # Copy to recovery
 BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := \
     utags \
@@ -68,9 +61,6 @@ BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := \
 
 RECOVERY_KERNEL_MODULES := $(addsuffix .ko,$(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD))
 
-# Security
-VENDOR_SECURITY_PATCH := 2022-08-01
-
 # ODM
 ODM_MANIFEST_SKUS := \
     dn \
@@ -78,6 +68,16 @@ ODM_MANIFEST_SKUS := \
 
 ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/odm/manifest_dn.xml
 ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/odm/manifest_n.xml
+
+# Partitions
+BOARD_DTBOIMG_PARTITION_SIZE := 2097152
+
+# Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+# Security
+VENDOR_SECURITY_PATCH := 2022-08-01
 
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
