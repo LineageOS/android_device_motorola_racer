@@ -17,6 +17,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
+    'device/motorola/racer',
     'hardware/motorola',
     'vendor/motorola/sm7250-common',
     'vendor/qcom/opensource/display',
@@ -25,6 +26,8 @@ namespace_imports = [
 blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/hw/com.qti.chi.override.so', 'vendor/lib64/hw/camera.qcom.so', 'vendor/lib64/com.qti.feature2.gs.so'): blob_fixup()
         .binary_regex_replace(b'camera.mot.is.coming.cts', b'vendor.camera.coming.cts'),
+    'vendor/lib64/libgf_hal.so': blob_fixup()
+        .replace_needed('vendor.goodix.hardware.biometrics.fingerprint@2.1_vendor.so', 'vendor.goodix.hardware.biometrics.fingerprint@2.1.so'),
     'vendor/lib64/libvidhance.so': blob_fixup()
         .add_needed('libcomparetf2_shim.so'),
     'vendor/lib64/sensors.moto.so': blob_fixup()
