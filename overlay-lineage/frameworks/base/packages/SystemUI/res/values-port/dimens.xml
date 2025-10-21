@@ -17,7 +17,4 @@
 <resources>
     <!-- The bottom margin of the keyguard security container -->
     <dimen name="kg_security_container_min_bottom_margin">625px</dimen>
-
-    <!-- Preferred refresh rate at keyguard, if supported by the display -->
-    <integer name="config_keyguardRefreshRate">90</integer>
 </resources>
