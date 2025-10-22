@@ -3,8 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#ifndef ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
-#define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
+#pragma once
 
 #include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
 #include <android/log.h>
@@ -84,5 +83,3 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
 }  // namespace biometrics
 }  // namespace hardware
 }  // namespace android
-
-#endif  // ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
