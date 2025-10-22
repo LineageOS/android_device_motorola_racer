@@ -86,9 +86,11 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
                 continue;
             }
 
-            mGoodixFingerprintDaemon->sendCommand(
-                    readBool(fd) ? NOTIFY_FINGER_DOWN : NOTIFY_FINGER_UP, {},
-                    [](int, const hidl_vec<signed char>&) {});
+            if (fodUiPoll.revents & (POLLERR | POLLPRI)) {
+                mGoodixFingerprintDaemon->sendCommand(
+                        readBool(fd) ? NOTIFY_FINGER_DOWN : NOTIFY_FINGER_UP, {},
+                        [](int, const hidl_vec<signed char>&) {});
+            }
         }
     }).detach();
 }
