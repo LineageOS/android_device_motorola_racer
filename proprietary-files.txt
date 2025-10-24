@@ -286,7 +286,5 @@ vendor/firmware/synaptics-tianma-s3908-20052606-313204-racer.tdat
 vendor/firmware/synaptics-tianma-s3908-20052606-313204-racer.tdat:recovery/root/vendor/firmware/synaptics-tianma-s3908-20052606-313204-racer.tdat
 
 # Vibrator firmware
-vendor/firmware/aw8695_haptic.bin:recovery/root/vendor/firmware/aw8695_haptic.bin
 vendor/firmware/aw8695_haptic.bin
-vendor/firmware/aw8695_rtp.bin:recovery/root/vendor/firmware/aw8695_rtp.bin
 vendor/firmware/aw8695_rtp.bin

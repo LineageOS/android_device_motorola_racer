@@ -59,7 +59,6 @@ BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := \
     qpnp-power-on-mmi \
     qpnp-smbcharger-mmi \
     slg5bm43670 \
-    aw8695 \
     exfat \
     sensors_class \
     sx933x_sar \
