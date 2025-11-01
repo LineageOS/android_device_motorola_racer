@@ -29,12 +29,6 @@ ro.vendor.fm.use_audio_session=true
 
 # Graphics
 persist.sys.sf.color_mode=0
-persist.sys.sf.enable_refresh_rate_rectification=0
-persist.sys.sf.set_rectify_timer_ms=1000
-persist.sys.sf.fps_threshold_duration_ms=290
-persist.sys.sf.fps_threshold_count=29
-persist.sys.sf.brightness_threshold_refresh_rate=6
-persist.sys.sf.forbidden_RRR_under_lowbrightness=1
 ro.surface_flinger.set_idle_timer_ms=4000
 ro.surface_flinger.set_touch_timer_ms=4000
 ro.surface_flinger.set_display_power_timer_ms=1000
