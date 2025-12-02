@@ -59,6 +59,10 @@ def blob_fixup_graphic_buffer_size(
 
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/etc/libnfc-hal-st.conf': blob_fixup()
+        # I33d07604e87a2d9466a3a857e281ee4b611330a8 "Switch NFC from HIDL to AIDL"
+        .regex_replace('White list', 'Allow list')
+        .regex_replace('DEVICE_HOST_WHITE_LIST', 'DEVICE_HOST_ALLOW_LIST'),
     ('vendor/lib64/hw/com.qti.chi.override.so', 'vendor/lib64/hw/camera.qcom.so', 'vendor/lib64/com.qti.feature2.gs.so'): blob_fixup()
         .binary_regex_replace(b'camera.mot.is.coming.cts', b'vendor.camera.coming.cts'),
     'vendor/lib64/camera/components/com.vidhance.node.processing.so': blob_fixup()
