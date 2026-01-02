@@ -4,18 +4,14 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Default paddings for content around the corners. -->
+    <dimen name="rounded_corner_content_padding">50px</dimen>
+
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height">90.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dip</dimen>
-    <dimen name="status_bar_height_portrait">90.0px</dimen>
+    <dimen name="status_bar_height">100px</dimen>
+    <dimen name="status_bar_height_landscape">36dip</dimen>
+    <dimen name="status_bar_height_portrait">100px</dimen>
 
     <!-- Height of area above QQS where battery/time go (48dp to reduce scrolling) -->
     <dimen name="quick_qs_offset_height">48dp</dimen>
-
-    <!-- Top adjustment for the software rounded corners since corners are not perfectly
-        round. This value is used when retrieving the "radius" of the rounded corner in cases
-        where the exact bezier curve cannot be retrieved. This value will be subtracted from
-        rounded_corner_radius to more accurately provide a "radius" for the rounded corners.-->
-    <dimen name="rounded_corner_radius_adjustment">8px</dimen>
-
 </resources>

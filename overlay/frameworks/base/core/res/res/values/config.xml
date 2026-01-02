@@ -157,12 +157,7 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string name="config_mainBuiltInDisplayCutout">
-        M 0, 0
-        H 164
-        V 90
-        H 0
-        L 0, 0
-        @left
+        M -980,0 L -914,0 L -914,95 L -980,95 Z @right
     </string>
 
     <!-- The default peak refresh rate for a given device. Change this value if you want to allow
