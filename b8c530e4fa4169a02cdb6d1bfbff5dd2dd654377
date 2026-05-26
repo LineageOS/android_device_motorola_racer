@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "184c8695_bd036b75",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-05-26T22:31:34Z",
+      "side": 1,
+      "message": "too many +2 to give, the whole chain is fine, waiting for moto-lito-on-kona to be merged",
+      "revId": "b8c530e4fa4169a02cdb6d1bfbff5dd2dd654377",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
