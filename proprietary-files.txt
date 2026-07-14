@@ -217,29 +217,6 @@ vendor/lib64/motorola.hardware.audio.adspd@1.0.so
 # Media configs
 vendor/etc/media_profiles_vendor.xml:vendor/etc/media_profiles_V1_0.xml
 
-# MotCamera2
-product/app/MotCamera2AI/MotCamera2AI.apk;PRESIGNED
-product/etc/init/init.motcamera2.rc
-product/etc/permissions/com.motorola.androidx.camera.extensions.xml
-product/etc/permissions/com.motorola.camera2.content.ai.xml
-product/etc/permissions/com.motorola.camera2.whitney.xml
-product/etc/permissions/deviceowner-configuration-com.motorola.camera2.xml
-product/etc/permissions/privapp-permissions-com.motorola.camera2.xml
-product/etc/sysconfig/hiddenapi-whitelist-com.motorola.camera2.xml
-product/framework/com.motorola.androidx.camera.extensions.jar
-product/priv-app/MotCamera2/MotCamera2.apk
-system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
-system/etc/permissions/com.motorola.motosignature.xml
-system/etc/permissions/moto-core_services.xml
-system/etc/permissions/moto-settings.xml
-system/framework/com.motorola.motosignature.jar
-system/framework/moto-core_services.jar
-system/framework/moto-settings.jar
-system_ext/etc/public.libraries-motocamera.txt
-system_ext/lib/libmcf_native_window_helper.motocamera.so
-system_ext/lib64/libmcf_native_window_helper.motocamera.so
-system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk
-
 # NFC
 vendor/etc/libnfc-hal-st.conf
 vendor/etc/libnfc-nci-st.conf:vendor/etc/libnfc-nci.conf
