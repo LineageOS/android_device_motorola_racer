@@ -16,7 +16,7 @@ on mmi-priority
 on fs
    # Majority of MMI DLKMs should be in this group
    setprop vendor.mmi_init.stage common
-   exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules stmvl53l1.ko cci_intf.ko watchdogtest cirrus_irq-madera arizona-ldo1 arizona-micsupp gpio-madera madera-pinctrl cirrus_cs35l41 cirrus_cs35l41-spi cirrus_cs47l35 cirrus_madera-core cirrus_madera extcon-madera cirrus_wm_adsp
+   exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules stmvl53l1.ko cci_intf.ko watchdogtest cirrus_irq-madera arizona-ldo1 arizona-micsupp gpio-madera pinctrl-madera cirrus_cs35l41 cirrus_cs35l41-spi cirrus_cs47l35 cirrus_madera-core cirrus_madera extcon-madera cirrus_wm_adsp
    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules st21nfc.ko goodix_v1430_mmi.ko goodix_v1430_update_mmi.ko goodix_v1430_ts_tools_mmi.ko goodix_fod_mmi.ko sec_mmi.ko synaptics_i2c.ko synaptics_core_module.ko synaptics_device.ko synaptics_diagnostics.ko synaptics_recovery.ko synaptics_reflash.ko synaptics_testing.ko
    setprop vendor.mmi_init.modules_loaded 1
 
