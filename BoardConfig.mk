@@ -8,6 +8,9 @@ include device/motorola/sm7250-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/motorola/racer
 
+# Audio
+AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
+
 # Display
 TARGET_SCREEN_DENSITY := 420
 
