@@ -181,7 +181,7 @@
             </routes>
         </module>
 
-        <module name="vx_motvr" halVersion="2.0">
+        <module name="motvr" halVersion="2.0">
             <mixPorts>
                 <mixPort name="primary input" role="sink" flags="AUDIO_INPUT_FLAG_HW_HOTWORD">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
