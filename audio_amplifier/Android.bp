@@ -1,0 +1,23 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "audio_amplifier.lito",
+    relative_install_path: "hw",
+    vendor: true,
+
+    srcs: [
+        "audio_amplifier.c",
+    ],
+
+    header_libs: [
+        "libhardware_headers",
+    ],
+
+    shared_libs: [
+        "liblog",
+        "libtinyalsa",
+    ],
+}
