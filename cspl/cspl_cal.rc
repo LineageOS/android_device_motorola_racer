@@ -1,0 +1,8 @@
+service vendor.cspl_cal /vendor/bin/cspl_cal
+    user audioserver
+    group audio
+    disabled
+    oneshot
+
+on property:init.svc.vendor.audio-hal=running
+    start vendor.cspl_cal

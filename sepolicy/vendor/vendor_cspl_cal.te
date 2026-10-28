@@ -1,0 +1,12 @@
+type vendor_cspl_cal, domain;
+type vendor_cspl_cal_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(vendor_cspl_cal)
+
+# Amp DSP controls
+allow vendor_cspl_cal audio_device:dir r_dir_perms;
+allow vendor_cspl_cal audio_device:chr_file rw_file_perms;
+
+# Factory speaker calibration
+allow vendor_cspl_cal mnt_vendor_file:dir search;
+r_dir_file(vendor_cspl_cal, vendor_persist_audio_file)

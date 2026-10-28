@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-impl \
     audio.primary.lito \
+    cspl_cal \
     libqcompostprocbundle
 
 PRODUCT_COPY_FILES += \

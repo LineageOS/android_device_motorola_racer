@@ -1,2 +1,5 @@
 # HAL Services
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.racer    u:object_r:hal_fingerprint_default_exec:s0
+
+# Speaker calibration
+/vendor/bin/cspl_cal                                                    u:object_r:vendor_cspl_cal_exec:s0

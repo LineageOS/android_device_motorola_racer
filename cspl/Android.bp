@@ -1,0 +1,15 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_binary {
+    name: "cspl_cal",
+    srcs: ["cspl_cal.cpp"],
+    init_rc: ["cspl_cal.rc"],
+    shared_libs: [
+        "libbase",
+        "libtinyalsa",
+    ],
+    vendor: true,
+}
